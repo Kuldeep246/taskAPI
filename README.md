@@ -160,12 +160,7 @@ This project is a RESTful API for managing tasks. It allows users to create, rea
       "description": "Buy groceries for the week",
       "dueDate": "2024-11-15T00:00:00.000Z",
       "status": "pending",
-      "assignedUserId": {
-        "_id": "6543210abcdef6543210abc",
-        "name": "John Doe",
-        "email": "john.doe@example.com",
-        "__v": 0
-      },
+      "assignedUserId":"6543210abcdef6543210abc",
       "__v": 0
     }
     ```
@@ -175,44 +170,7 @@ This project is a RESTful API for managing tasks. It allows users to create, rea
       "message": "Task not found"
     }
     ```
-#### GET /tasks
-*   **Description:** Retrieves all tasks for the authenticated user.  Supports filtering by status using the `status` query parameter.
-*   **Authentication:** Required (Bearer token in the `Authorization` header).
-*   **Query Parameters:**
-    *   `status` (optional): Filters tasks by status (e.g., `?status=completed`).
-*   **Output (Success - 200 OK):**
-    ```json
-    [
-      {
-        "_id": "6543210abcdef6543210abe",
-        "title": "Grocery Shopping",
-        "description": "Buy groceries for the week",
-        "dueDate": "2024-11-15T00:00:00.000Z",
-        "status": "pending",
-        "assignedUserId": {
-          "_id": "6543210abcdef6543210abc",
-          "name": "John Doe",
-          "email": "john.doe@example.com",
-          "__v": 0
-        },
-        "__v": 0
-      },
-      {
-        "_id": "6543210abcdef6543210abf",
-        "title": "Laundry",
-        "description": "Wash and fold clothes",
-        "dueDate": "2024-11-10T00:00:00.000Z",
-        "status": "completed",
-        "assignedUserId": {
-          "_id": "6543210abcdef6543210abc",
-          "name": "John Doe",
-          "email": "john.doe@example.com",
-          "__v": 0
-        },
-        "__v": 0
-      }
-    ]
-    ```
+
 #### PUT /tasks/:id
 *   **Description:** Updates a task by ID.
 *   **Authentication:** Required (Bearer token in the `Authorization` header).
