@@ -72,6 +72,8 @@ This project is a RESTful API for managing tasks. It allows users to create, rea
       "message": "Name and email are required"
     }
     ```
+    ![Screenshot 2025-05-23 002826](https://github.com/user-attachments/assets/351dd116-f9e0-48bf-b733-553b2f9aaa1d)
+
 #### GET /users/:id
 *   **Description:** Retrieves a user by ID.
 *   **Authentication:** Required (Bearer token in the `Authorization` header).
@@ -97,6 +99,8 @@ This project is a RESTful API for managing tasks. It allows users to create, rea
       "message": "Access denied"
     }
     ```
+    ![image](https://github.com/user-attachments/assets/fb6cd0fa-d1d5-4399-9821-c4b6a1671356)
+
 #### GET /users
 *   **Description:** Retrieves all users.
 *   **Authentication:** Required (Bearer token in the `Authorization` header).
@@ -117,6 +121,8 @@ This project is a RESTful API for managing tasks. It allows users to create, rea
       }
     ]
     ```
+    ![Screenshot 2025-05-22 202152](https://github.com/user-attachments/assets/c15c9381-d102-4f7e-9e1f-dcb6ec6a0c27)
+
 ### Task Routes
 #### POST /tasks
 *   **Description:** Creates a new task.
@@ -148,6 +154,8 @@ This project is a RESTful API for managing tasks. It allows users to create, rea
       "message": "Title is required"
     }
     ```
+    ![Screenshot 2025-05-22 203036](https://github.com/user-attachments/assets/1ecb7230-5c7a-4640-8e90-782b659f463e)
+
 #### GET /tasks/:id
 *   **Description:** Retrieves a task by ID.
 *   **Authentication:** Required (Bearer token in the `Authorization` header).
