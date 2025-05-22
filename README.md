@@ -1,11 +1,13 @@
 # Task Management API
 ## Project Overview
 This project is a RESTful API for managing tasks. It allows users to create, read, update, and delete tasks. Each task is associated with a user, and authentication is required to access the API.
+
 **Key Features:**
 *   User authentication and authorization.
 *   CRUD operations for tasks.
 *   Task status management (pending, in-progress, completed).
 *   Filtering tasks by status.
+  
 **Requirements:**
 *   Node.js (version 18 or higher)
 *   MongoDB
@@ -13,7 +15,7 @@ This project is a RESTful API for managing tasks. It allows users to create, rea
 ### Installation
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/Kuldeep246/taskAPI
     cd task-api
     ```
     
@@ -37,10 +39,8 @@ This project is a RESTful API for managing tasks. It allows users to create, rea
     
 ### Dependencies
 *   **express:** Web framework for Node.js.
-*   **mongoose:** MongoDB object modeling tool.
 *   **dotenv:** Loads environment variables from a `.env` file.
 *   **jsonwebtoken:** JSON Web Token implementation for authentication.
-*   **cors:** Middleware to enable Cross-Origin Resource Sharing.
 *   **mongodb:** MongoDB driver.
 ## API Documentation
 ### User Routes
